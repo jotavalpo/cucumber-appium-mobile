@@ -5,3 +5,4 @@
 /workspace.xml
 target/
 /src/test/resources/apps/
+cucumber.json

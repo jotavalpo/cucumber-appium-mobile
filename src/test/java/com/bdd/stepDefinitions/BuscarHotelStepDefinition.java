@@ -4,7 +4,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-import java.net.MalformedURLException;
+import java.io.IOException;
 
 import com.bdd.pages.BuscarHotelView;
 
@@ -15,8 +15,8 @@ public class BuscarHotelStepDefinition {
     }
 
     @Given("ingreso a la aplicacion Airbnb")
-    public void ingreso_a_la_aplicacion_airbnb() throws MalformedURLException {
-        BuscarHotelView.setAndroidDriver();
+    public void ingreso_a_la_aplicacion_airbnb() throws IOException {
+        buscarHotelView().setAndroidDriver();
     }
 
     @When("doy clic a buscador")
